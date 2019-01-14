@@ -1,7 +1,7 @@
 {
   "name": "ses-builder",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Simple Parameter builder for Amazon SES SendMail API",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "Hidetaka Okamoto <info@wp-kyoto.net> (https://wp-kyoto.net)",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^23.3.12",
     "@types/node": "^10.12.18",
