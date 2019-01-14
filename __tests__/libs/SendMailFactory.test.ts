@@ -7,9 +7,6 @@ import {
     SESMessageTagListHelper,
     SESSendMailFactory
 } from '../../libs/SendMailFactory'
-import {Tag} from "aws-sdk/clients/resourcegroupstaggingapi";
-
-const func = () => true
 
 describe('SESMailContentHelper', () => {
     it('just return default props', () => {
