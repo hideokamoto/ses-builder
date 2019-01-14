@@ -13,3 +13,4 @@ dev.js
 tsconfig.json
 README.md
 yarn.lock
+example/
