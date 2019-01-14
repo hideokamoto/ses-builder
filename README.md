@@ -6,6 +6,12 @@
 
 Easy to create a request object to execute `ses.sendEmail`.
 
+# TOC
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Testing](#testing)
+- [API Document](#api-document)
+
 ## Getting started
 
 
@@ -47,3 +53,6 @@ $ cd ses-builder
 $ npm install
 $ npm test -- --watch
 ```
+
+## API Document
+[https://hideokamoto.github.io/ses-builder/](https://hideokamoto.github.io/ses-builder/)
