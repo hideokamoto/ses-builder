@@ -38,3 +38,12 @@ SendMailBuilder.setReplyToAddresses(['hi@example.com'])
 const ses = new SES()
 ses.sendEmail(SendMailBuilder.getParams()).promise()
 ```
+
+## Testing
+
+```bash
+$ git clone git@github.com:hideokamoto/ses-builder.git
+$ cd ses-builder
+$ npm install
+$ npm test -- --watch
+```
