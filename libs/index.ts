@@ -17,28 +17,38 @@ import {
     MailBodyBuilder
 } from './SendMailBuilder'
 
-export interface SESBuilder {
-    MailBodyHelper: {
-        init(): MailBodyBuilder
-    },
-    MailContentHelper: {
-        init(): ContentBuilder,
-    },
-    MailDestinationHelper: {
-        init(): DestinationBuilder,
-    },
-    MailMessageHelper: {
-        init(): MessageBuilder,
-    },
-    MessageTagHelper: {
-        init(): MessageTagBuilder,
-    },
-    MessageTagListHelper: {
-        init(): MessageTagListBuilder,
-    },
-    SendMailFactory: {
-        init(): SESSendMailBuilder
-    },
+export namespace service {
+    export interface interfaces {
+        MailBodyBuilder: MailBodyBuilder
+        MessageTagBuilder: MessageTagBuilder
+        MessageTagListBuilder: MessageTagListBuilder
+        SESSendMailBuilder: SESSendMailBuilder
+        DestinationBuilder: DestinationBuilder
+        ContentBuilder: ContentBuilder
+    }
+    export interface SESBuilder {
+        MailBodyHelper: {
+            init(): MailBodyBuilder
+        },
+        MailContentHelper: {
+            init(): ContentBuilder,
+        },
+        MailDestinationHelper: {
+            init(): DestinationBuilder,
+        },
+        MailMessageHelper: {
+            init(): MessageBuilder,
+        },
+        MessageTagHelper: {
+            init(): MessageTagBuilder,
+        },
+        MessageTagListHelper: {
+            init(): MessageTagListBuilder,
+        },
+        SendMailFactory: {
+            init(): SESSendMailBuilder
+        },
+    }
 }
 
 const SESBuilder = {
