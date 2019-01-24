@@ -1,6 +1,6 @@
 {
   "name": "ses-builder",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Simple Parameter builder for Amazon SES SendMail API",
   "main": "dist/index.js",
   "scripts": {

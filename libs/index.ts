@@ -28,13 +28,13 @@ export interface SESBuilder {
 }
 
 const SESBuilder = {
-    MailBodyHelper: SESMailBodyHelper.init(),
-    MailContentHelper: SESMailContentHelper.init(),
-    MailDestinationHelper: SESMailDestinationHelper.init(),
-    MailMessageHelper: SESMailMessageHelper.init(),
-    MessageTagHelper: SESMessageTagHelper.init(),
-    MessageTagListHelper: SESMessageTagListHelper.init(),
-    SendMailBuilder: SESSendMailFactory.init()
+    MailBodyHelper: SESMailBodyHelper,
+    MailContentHelper: SESMailContentHelper,
+    MailDestinationHelper: SESMailDestinationHelper,
+    MailMessageHelper: SESMailMessageHelper,
+    MessageTagHelper: SESMessageTagHelper,
+    MessageTagListHelper: SESMessageTagListHelper,
+    SESSendMailFactory
 }
 
 export default SESBuilder
