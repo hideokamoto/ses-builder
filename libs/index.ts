@@ -18,13 +18,27 @@ import {
 } from './SendMailBuilder'
 
 export interface SESBuilder {
-    MailBodyHelper: MailBodyBuilder,
-    MailContentHelper: ContentBuilder,
-    MailDestinationHelper: DestinationBuilder,
-    MailMessageHelper: MessageBuilder,
-    MessageTagHelper: MessageTagBuilder,
-    MessageTagListHelper: MessageTagListBuilder,
-    SendMailBuilder: SESSendMailBuilder
+    MailBodyHelper: {
+        init(): MailBodyBuilder
+    },
+    MailContentHelper: {
+        init(): ContentBuilder,
+    },
+    MailDestinationHelper: {
+        init(): DestinationBuilder,
+    },
+    MailMessageHelper: {
+        init(): MessageBuilder,
+    },
+    MessageTagHelper: {
+        init(): MessageTagBuilder,
+    },
+    MessageTagListHelper: {
+        init(): MessageTagListBuilder,
+    },
+    SendMailFactory: {
+        init(): SESSendMailBuilder
+    },
 }
 
 const SESBuilder = {
@@ -34,7 +48,7 @@ const SESBuilder = {
     MailMessageHelper: SESMailMessageHelper,
     MessageTagHelper: SESMessageTagHelper,
     MessageTagListHelper: SESMessageTagListHelper,
-    SESSendMailFactory
+    SendMailFactory: SESSendMailFactory
 }
 
 export default SESBuilder

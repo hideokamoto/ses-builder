@@ -25,7 +25,7 @@ $ npm i -S ses-builder aws-sdk
 import { SES } from 'aws-sdk'
 import SESBuilder from 'ses-builder'
 
-const SendMailBuilder = SESBuilder.SESSendMailFactory.init()
+const SendMailBuilder = SESBuilder.SendMailFactory.init()
 const MailDestinationHelper = SESBuilder.MailDestinationHelper.init()
 const MailMessageHelper = SESBuilder.MailMessageHelper.init()
 
